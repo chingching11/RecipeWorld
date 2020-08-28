@@ -1,0 +1,38 @@
+<%- include('partials/header'); -%>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6">
+            <h3 class="detail-label"><%= ingredientDetails.recipe.label %> </h3>
+            <img class="detail-img" src=<%= ingredientDetails.recipe.image %> >    
+        </div>
+        <div class="col-lg-6">
+            <div class="container">
+                <p>
+                    <strong>Ingredients:</strong>
+                    <ul>
+                        <% ingredientDetails.recipe.ingredientLines.forEach(i => { %>
+                            <li> <%= i %> </li>
+                        <% }) %>
+                    </ul>
+                </p>
+
+                <p>
+                    <strong>Health Labels: </strong>
+                    <ul>
+                        <% ingredientDetails.recipe.healthLabels.forEach(l => { %>
+                            <li> <%= l %> </li>
+                        <% }) %>
+                    </ul>
+                </p>                
+            </div>            
+        </div>    
+    </div>    
+</div>
+
+<div class="container-fluid">
+    <p>
+        <a href=<%= ingredientDetails.recipe.url %> target="_blank"> Learn More About the Recipe </a>
+    </p>
+</div>
+
+<%- include('partials/footer'); -%>

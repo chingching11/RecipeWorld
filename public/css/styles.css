@@ -1,0 +1,63 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    padding: 2% 0;
+}
+
+.container-fluid{
+    padding: 3% 15%;
+}
+
+form{
+    text-align: center;
+}
+
+body{
+    background-color: #f1f3f8;
+}
+
+.navbar-brand{
+    font-family: 'Lobster', cursive;
+    font-size: xx-large;    
+}
+
+.jumbotron{
+    background-image: url("../images/meal.jpg");
+    background-size: cover;
+}
+
+.jumbotron h1{
+    font-family: 'Dancing Script', cursive;   
+    background: rgba(255, 255, 255, 0.75); 
+    color: red;
+}
+
+.jumbotron p{
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.card-title{
+    font-weight: bold;
+}
+
+.card-text{
+    font-weight: bold;
+}
+.detail-label{
+    font-weight: bold;
+}
+
+.detail-img{
+    padding: 5% 0%;
+}
+
+.about-text{
+    font-size: 1.2rem;
+}
+
+.sorry-text{
+    font-size: 1.2 rem;
+    font-weight: bold;
+}
